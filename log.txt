@@ -1,0 +1,103 @@
+2023-09-17 05:54:09.747952: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Input directory (dataset):  Chatbot/dailydialog/
+Checkpoint directory:  res
+Mode:  train
+Model name:  gpt2
+------------- Dataset Loaded! --------------
+Len dataset: 11118
+Sample data: {'text': "#Farnoosh $neutral: Can you do push-ups ? #Hasan $neutral:  Of course I can . It's a piece of cake ! Believe it or not , I can do 30 push-ups a minute . #Farnoosh $surprise:  Really ? I think that's impossible ! #Hasan $neutral:  You mean 30 push-ups ? #Farnoosh $neutral:  Yeah ! #Hasan $neutral:  It's easy . If you do exercise everyday , you can make it , too . ", 'emotions': ['0', '0', '6', '0', '0', '0'], 'acts': ['2', '1', '2', '2', '1', '1'], 'text_label': None}
+------------- Training Started! --------------
+{'loss': 2.214, 'learning_rate': 0.0001, 'epoch': 1.44}
+{'loss': 1.974, 'learning_rate': 0.0001, 'epoch': 2.88}
+{'loss': 1.9395, 'learning_rate': 0.0001, 'epoch': 4.32}
+{'loss': 1.9261, 'learning_rate': 0.0001, 'epoch': 5.76}
+{'loss': 1.9084, 'learning_rate': 0.0001, 'epoch': 7.19}
+{'loss': 1.8953, 'learning_rate': 0.0001, 'epoch': 8.63}
+{'loss': 1.8905, 'learning_rate': 0.0001, 'epoch': 10.07}
+{'loss': 1.8832, 'learning_rate': 0.0001, 'epoch': 11.51}
+{'loss': 1.8746, 'learning_rate': 0.0001, 'epoch': 12.95}
+{'loss': 1.8709, 'learning_rate': 0.0001, 'epoch': 14.39}
+{'loss': 1.8586, 'learning_rate': 0.0001, 'epoch': 15.83}
+{'loss': 1.8573, 'learning_rate': 0.0001, 'epoch': 17.27}
+{'loss': 1.848, 'learning_rate': 0.0001, 'epoch': 18.71}
+{'loss': 1.8471, 'learning_rate': 0.0001, 'epoch': 20.14}
+{'loss': 1.8425, 'learning_rate': 0.0001, 'epoch': 21.58}
+{'loss': 1.8396, 'learning_rate': 0.0001, 'epoch': 23.02}
+{'loss': 1.8312, 'learning_rate': 0.0001, 'epoch': 24.46}
+{'loss': 1.8311, 'learning_rate': 0.0001, 'epoch': 25.9}
+{'loss': 1.824, 'learning_rate': 0.0001, 'epoch': 27.34}
+{'loss': 1.8174, 'learning_rate': 0.0001, 'epoch': 28.78}
+{'loss': 1.8145, 'learning_rate': 0.0001, 'epoch': 30.22}
+{'loss': 1.814, 'learning_rate': 0.0001, 'epoch': 31.65}
+{'loss': 1.811, 'learning_rate': 0.0001, 'epoch': 33.09}
+{'loss': 1.8021, 'learning_rate': 0.0001, 'epoch': 34.53}
+{'loss': 1.8031, 'learning_rate': 0.0001, 'epoch': 35.97}
+{'loss': 1.7972, 'learning_rate': 0.0001, 'epoch': 37.41}
+{'loss': 1.7945, 'learning_rate': 0.0001, 'epoch': 38.85}
+{'loss': 1.7885, 'learning_rate': 0.0001, 'epoch': 40.29}
+{'loss': 1.7885, 'learning_rate': 0.0001, 'epoch': 41.73}
+{'loss': 1.7867, 'learning_rate': 0.0001, 'epoch': 43.17}
+{'loss': 1.7829, 'learning_rate': 0.0001, 'epoch': 44.6}
+{'loss': 1.7794, 'learning_rate': 0.0001, 'epoch': 46.04}
+{'loss': 1.7765, 'learning_rate': 0.0001, 'epoch': 47.48}
+{'loss': 1.772, 'learning_rate': 0.0001, 'epoch': 48.92}
+{'train_runtime': 7637.959, 'train_samples_per_second': 72.781, 'train_steps_per_second': 4.55, 'train_loss': 1.8477562176821043, 'epoch': 50.0}
+100% 34750/34750 [2:06:55<00:00,  4.56it/s]
+------------- Model Saved! --------------
+
+2023-09-17 08:16:03.460554: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Input directory (dataset):  Chatbot/dailydialog/
+Checkpoint directory:  res
+Mode:  test
+Model name:  gpt2
+------------- Dataset Loaded! --------------
+Len dataset: 1000
+Sample data: {'text': '#Farnoosh $neutral: The taxi drivers are on strike again . #Hasan $neutral:  What for ? #Farnoosh $neutral:  They want the government to reduce the price of the gasoline . #Hasan $neutral:  ', 'emotions': ['0', '0', '0', '0'], 'acts': ['1', '2', '1', '1'], 'text_label': ' It is really a hot potato . '}
+Some weights of the model checkpoint at res/ckpt_model were not used when initializing GPT2LMHeadModel: ['transformer.h.5.attn.c_attn.lora_B.default.weight', 'transformer.h.1.attn.c_attn.lora_A.default.weight', 'transformer.h.2.attn.c_attn.lora_B.default.weight', 'transformer.h.10.attn.c_attn.lora_B.default.weight', 'transformer.h.8.attn.c_attn.lora_A.default.weight', 'transformer.h.6.attn.c_attn.lora_A.default.weight', 'transformer.h.7.attn.c_attn.lora_A.default.weight', 'transformer.h.7.attn.c_attn.lora_B.default.weight', 'transformer.h.4.attn.c_attn.lora_B.default.weight', 'transformer.h.3.attn.c_attn.lora_A.default.weight', 'transformer.h.8.attn.c_attn.lora_B.default.weight', 'transformer.h.3.attn.c_attn.lora_B.default.weight', 'transformer.h.11.attn.c_attn.lora_B.default.weight', 'transformer.h.5.attn.c_attn.lora_A.default.weight', 'transformer.h.4.attn.c_attn.lora_A.default.weight', 'transformer.h.9.attn.c_attn.lora_A.default.weight', 'transformer.h.11.attn.c_attn.lora_A.default.weight', 'transformer.h.10.attn.c_attn.lora_A.default.weight', 'transformer.h.0.attn.c_attn.lora_B.default.weight', 'transformer.h.2.attn.c_attn.lora_A.default.weight', 'transformer.h.1.attn.c_attn.lora_B.default.weight', 'transformer.h.0.attn.c_attn.lora_A.default.weight', 'transformer.h.9.attn.c_attn.lora_B.default.weight', 'transformer.h.6.attn.c_attn.lora_B.default.weight']
+- This IS expected if you are initializing GPT2LMHeadModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing GPT2LMHeadModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+------------- Evaluation Started! --------------
+Input: #Farnoosh $neutral: Hey man , you wanna buy some weed ? #Hasan $surprise:  Some what ? #Farnoosh $neutral:  Weed ! You know ? Pot , Ganja , Mary Jane some chronic ! #Hasan $neutral:  Oh , umm , no thanks . #Farnoosh $neutral:  I also have blow if you prefer to do a few lines . #Hasan $neutral:  No , I am ok , really . #Farnoosh $neutral:  Come on man ! I even got dope and acid ! Try some ! #Hasan $neutral:  Do you really have all of these drugs ? Where do you get them from ? #Farnoosh $neutral:  I got my connections ! Just tell me what you want and I ’ ll even give you one ounce for free . #Hasan $neutral:  Sounds good ! Let ’ s see , I want . #Farnoosh $fear:  Yeah ? #Hasan $neutral:  
+Answer:  I am not sure what you are talking about? 
+Label:  I want you to put your hands behind your head ! You are under arrest ! 
+----------------------------
+Input: #Farnoosh $neutral: Only one . But I wanted to make sure I'd get it . #Hasan $neutral:  Yeah , I really wanted that Chanel bag , too . But just in case you should bid low . #Farnoosh $fear:  But there are only two more days until the bidding closes ! #Hasan $happiness:  I bid on a Chanel watch at the last minute , and got it sixty percent off ! #Farnoosh $neutral:  Oh ... I'm such a newbie . But at least I'm sure I'll get that tennis racket . #Hasan $happiness:  Don't count on it , Babe . eBay is always full of surprises . #Farnoosh $neutral:  
+Answer:  I'm so glad I got it! 
+Label:  Well ... guess how low the bidding starts on the tennis racket ? 
+----------------------------
+Input: #Farnoosh $neutral: I'd like to speak Dr.Johnson . #Hasan $neutral:  Sorry , but he's not in . May I take a message for you ? #Farnoosh $neutral:  This is Robert Jordan.Would you ask him to call me back , please ? #Hasan $neutral:  
+Answer:  I'm sorry. May I ask you to call me back? 
+Label:  OK , I'll tell him . 
+----------------------------
+Input: #Farnoosh $neutral: How much will my pay be , if you don ’ t mind my asking ? #Hasan $neutral:  We would like to start you off at 1,500 yuan a month , not including bonus and overtime pay . We don ’ t give bonus every month , but we offer a semi-annual bonus . And you will receive two weeks paid vacation a year , as well . Does it suit you ? #Farnoosh $neutral:  Yes , thank you . May I ask for an apartment ? #Hasan $neutral:  
+Answer:  We are looking for a place to live in the city of Hong Kong. We are looking for
+Label:  No problem . We'll supply you with an apartment of two bedrooms and a living room . 
+----------------------------
+Input: #Farnoosh $neutral: Excuse me , I have something to trouble you . #Hasan $neutral:  Yes ? I'll be very glad if I could be of any help to you . #Farnoosh $neutral:  An hour ago , I bought this vase with my tourist . #Hasan $neutral:  Oh , yes . I remember it clearly . Is there anything wrong with it ? #Farnoosh $neutral:  I'm afraid so . We found this crack on the bottom when I went back to my hotel . #Hasan $neutral:  Oh , how awful ! Let me have a look , I'm terribly sorry . It was most thoughtless of me . Would you excuse me , please ? #Farnoosh $neutral:  Oh , It's quite all right , I suppose . It can't be helped sometimes . #Hasan $neutral:  It's very kind of you to say so . How about changing another one for you ? #Farnoosh $happiness:  All right . Thank you . #Hasan $neutral:  Just a minute , please . I won't be long . I'm sure this one is perfect . You may examine it carefully . #Farnoosh $neutral:  Oh , yes , it is . I'll take this one . #Hasan $neutral:  I'm very sorry for any inconvenience I've caused you . #Farnoosh $neutral:  
+Answer:  I'm sorry. I'm sorry. 
+Label:  Well , there's no reason to apologize for such a trifle thing . 
+----------------------------
+Input: #Farnoosh $happiness: Hi , Ellen . That outfit looks terrific ! #Hasan $happiness:  Thanks , Jim . I didn ’ t think guys paid attention to stuff like that . #Farnoosh $happiness:  No , we just don ’ t usually admit it ! #Hasan $happiness:  
+Answer:  I'm sorry, Jim. I'm sorry. 
+Label:  Well , thanks for the compliment anyway ! 
+----------------------------
+Input: #Farnoosh $neutral: The air conditioning is not working ! We need to call a handyman before we start to fry in here ! #Hasan $neutral:  Dan is on top of that . I think they are also getting the handyman to fix the bathroom toilet that keeps clogging up . #Farnoosh $neutral:  That would be convenient . They might as well ask him to fix the electrical wiring . The circuit breakers keep going out all the time . It ’ s really annoying ! #Hasan $neutral:  Yeah you are right . This office is falling apart ! Frank told me the other day that the gutters outside were clogged and that ’ s why the parking lot was flooded . #Farnoosh $neutral:  
+Answer:  I don't know what to say. I am not sure what to say. I am not sure
+Label:  I know ! I was in ankle deep water trying to get to my car that day ! The handyman definitely has his work cut out for him . 
+----------------------------
+Input: #Farnoosh $anger: Why didn't you tell me you had a girlfriend ? #Hasan $neutral:  Sorry , I thought you knew . #Farnoosh $anger:  But you should have told me you were in love with her . #Hasan $neutral:  Didn't I ? #Farnoosh $anger:  You know you didn't . #Hasan $neutral:  Well , I'm telling you now . #Farnoosh $anger:  Yes , but you might have told me before . #Hasan $neutral:  I didn't think you'd be interested . #Farnoosh $anger:  You can't be serious.How dare you not tell me you were going to marry her ? #Hasan $neutral:  Sorry , I didn't think it mattered . #Farnoosh $anger:  
+Answer:  I'm sorry. 
+Label:  Oh , you men ! You're all the same . 
+----------------------------
+Input: #Farnoosh $neutral: Do you consider yourself a good mother ? #Hasan $happiness:  Yes , I'm a very good mother and successful career woman . #Farnoosh $neutral:  How can you manage to do both ? I mean , it is so hard to be a working mother . #Hasan $happiness:  I think the most important thing is that you should be nice to yourself , like keeping housework simple , spending money on things that make life easier , buying yourself things you like , and so on . You can only be nice to others when you can be nice to yourself . #Farnoosh $neutral:  Does your husband feel the same ? #Hasan $happiness:  
+Answer:  I don't think so. 
+Label:  Yes . He is very understanding and supportive . 
+----------------------------
+Input: #Farnoosh $neutral: Sarah , what did you do today ? #Hasan $neutral:  I went shopping . #Farnoosh $neutral:  Did you buy anything ? #Hasan $neutral:  Yes , I bought a few things . #Farnoosh $neutral:  What did you buy ? #Hasan $neutral:  I bought this coat . Do you like it ? #Farnoosh $happiness:  Yeah , I like it a lot . It's very pretty . Where did you buy it ? #Hasan $neutral:  At the mall on 5th street . #Farnoosh $neutral:  Was it expensive ? #Hasan $neutral:  No , it wasn't expensive . It was on sale for 20 dollars . #Farnoosh $neutral:  That's cheap . #Hasan $happiness:  I know . It was a really good deal . #Farnoosh $neutral:  
+Answer:  I'm glad you liked it. 
+Label:  I don't think you'll need to wear it for a while . It's been really hot lately . 
+----------------------------
+------------- Results! --------------
+Rouge:  {'rouge1': 0.10254592770727998, 'rouge2': 0.023028254116531456, 'rougeL': 0.09627139247815074, 'rougeLsum': 0.09608329850729666}
+Bleu {'bleu': 0.012639909446031746, 'precisions': [0.2014664410603497, 0.02540766021994691, 0.009486847779215178, 0.0029930162953109413], 'brevity_penalty': 0.647357765983805, 'length_ratio': 0.6969339622641509, 'translation_length': 8865, 'reference_length': 12720}
+
