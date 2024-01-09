@@ -1,9 +1,9 @@
 ## requirements
-
+<pre>
 pip install -q -U trl transformers accelerate git+https://github.com/huggingface/peft.git
 pip install -q datasets bitsandbytes einops wandb
 pip install evaluate rouge_score
-
+</pre>
 ## commands: 
 <pre>
 Arguments:
@@ -14,11 +14,13 @@ Arguments:
 </pre>
 
 ## train
+<pre>
 python main.py -i "daily_dialog/" -m "train" -n "gpt2" -c "res"
-
+</pre>
 ## test
+<pre>
 python main.py -i "daily_dialog/" -m "test" -n "gpt2" -c "res"
-
+</pre>
 
 ## structure
 <pre>
