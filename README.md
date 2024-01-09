@@ -1,10 +1,10 @@
-#requirements
+## requirements
 
 pip install -q -U trl transformers accelerate git+https://github.com/huggingface/peft.git
 pip install -q datasets bitsandbytes einops wandb
 pip install evaluate rouge_score
 
-#commands: 
+## commands: 
 """
 Arguments:
 -i --input_dir: dataset path
@@ -20,7 +20,8 @@ python main.py -i "daily_dialog/" -m "train" -n "gpt2" -c "res"
 python main.py -i "daily_dialog/" -m "test" -n "gpt2" -c "res"
 
 
-#structure
+## structure
+"""
 GenerativeChatBot
      |
      ├── dailydialog
@@ -39,6 +40,7 @@ GenerativeChatBot
          │   ├── config.json
          │   └── generation_config.json
          └── ckpt_tokenizer
+"""
              ├── merges.txt
              ├── special_tokens_map.json
              ├── tokenizer.json
