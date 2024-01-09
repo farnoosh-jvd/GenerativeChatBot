@@ -5,8 +5,8 @@ pip install -q datasets bitsandbytes einops wandb
 pip install evaluate rouge_score
 </pre>
 ## commands: 
-<pre>
 Arguments:
+<pre>
 -i --input_dir: dataset path
 -m --mode: either 'train' or 'test'
 -n --model_name: any autoregressive model from huggingface like gpt2
