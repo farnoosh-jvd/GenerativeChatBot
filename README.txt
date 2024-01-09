@@ -22,18 +22,25 @@ python main.py -i "daily_dialog/" -m "test" -n "gpt2" -c "res"
 
 #structure
 GenerativeChatBot
-     |	
-     |__daily_dialog
-     |      |_test
-     |      |_train
-     |      |_validation
-     |      |_*.txt
      |
-     |__res
-     |
-     |__parser.py: parse and preprocess dialy dialog and creates the dataset
-     |__main.py: The main script initiating the whole pipeline
-     |__train.py: Training script that finetunes model with LORA
-     |__evaluation.py: Eval script that calculates rouge, and bleu scores
-  
-
+     ├── dailydialog
+     │   ├── dialogues_topic.txt
+     │   ├── readme.txt
+     │   ├── test
+     │   ├── train
+     │   └── validation
+     ├── evaluation.py: Eval script that calculates rouge, and bleu scores
+     ├── main.py: The main script initiating the whole pipeline
+     ├── parser.py: parse and preprocess dialy dialog and creates the dataset
+     ├── report.docx
+     ├── train.py: Training script that finetunes model with LORA
+     └── res
+         ├── ckpt_model
+         │   ├── config.json
+         │   └── generation_config.json
+         └── ckpt_tokenizer
+             ├── merges.txt
+             ├── special_tokens_map.json
+             ├── tokenizer.json
+             ├── tokenizer_config.json
+             └── vocab.json
