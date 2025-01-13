@@ -9,8 +9,8 @@ Arguments:
 <pre>
 -i --input_dir: dataset path
 -m --mode: either 'train' or 'test'
--n --model_name: any autoregressive model from huggingface like gpt2
--c --ckpt_dir: the directory for saving checkpoints
+-n --model_name: any autoregressive model from huggingface like gpt2, Llama
+-c --ckpt_dir: the directory for saving the checkpoints
 </pre>
 
 ## train
